@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pizza Menu - Foodie's Delight</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            background-color: #fffaf0;
+            color: #333;
+        }
+        
+        header {
+            background-color: #ff4d4d;
+            color: white;
+            padding: 20px;
+            font-size: 28px;
+            text-align: center;
+            position: relative;
+        }
+        
+        .home-button {
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            background-color: #fff;
+            color: #ff4d4d;
+            padding: 8px 16px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 6px;
+            transition: 0.3s;
+        }
+        
+        .home-button:hover {
+            background-color: #ffcccc;
+        }
+        
+        .menu-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            padding: 40px 20px;
+        }
+        
+        .pizza-card {
+            background-color: white;
+            border-radius: 10px;
+            width: 280px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+        
+        .pizza-card:hover {
+            transform: scale(1.03);
+        }
+        
+        .pizza-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+        
+        .pizza-info {
+            padding: 15px;
+        }
+        
+        .pizza-info h3 {
+            margin-bottom: 10px;
+            color: #ff4d4d;
+        }
+        
+        .pizza-info p {
+            font-size: 15px;
+            margin-bottom: 10px;
+        }
+        
+        .price {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .order-btn {
+            background-color: #ff4d4d;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 15px;
+        }
+        
+        .order-btn:hover {
+            background-color: #cc0000;
+        }
+        
+        footer {
+            margin-top: 50px;
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        🍕 Pizza Menu
+        <a class="home-button" href="index.html">Home</a>
+    </header>
+
+    <div class="menu-container">
+
+        <!-- Margherita -->
+        <div class="pizza-card">
+            <img src="img/margeritapizza.jpeg" alt="Margherita Pizza">
+            <div class="pizza-info">
+                <h3>Margherita</h3>
+                <p>Classic cheese & tomato pizza with basil and olive oil.</p>
+                <div class="price">₹199</div>
+                <button class="order-btn" onclick="alert('Margherita Pizza Ordered!')">Order</button>
+            </div>
+        </div>
+
+        <!-- Pepperoni -->
+        <div class="pizza-card">
+            <img src="img/pepperonipizza.jpeg" alt="Pepperoni Pizza">
+            <div class="pizza-info">
+                <h3>Pepperoni</h3>
+                <p>Loaded with spicy pepperoni & extra cheese.</p>
+                <div class="price">₹249</div>
+                <button class="order-btn" onclick="alert('Pepperoni Pizza Ordered!')">Order</button>
+            </div>
+        </div>
+
+        <!-- Veggie -->
+        <div class="pizza-card">
+            <img src="img/veggiepizza.jpeg" alt="Veggie Pizza">
+            <div class="pizza-info">
+                <h3>Veggie Delight</h3>
+                <p>Fresh capsicum, onions, olives, sweet corn & tomato sauce.</p>
+                <div class="price">₹229</div>
+                <button class="order-btn" onclick="alert('Veggie Delight Pizza Ordered!')">Order</button>
+            </div>
+        </div>
+
+        <!-- Cheese Burst -->
+        <div class="pizza-card">
+            <img src="img/cheesebrust.jpeg" alt="Cheese Burst Pizza">
+            <div class="pizza-info">
+                <h3>Cheese Burst</h3>
+                <p>Oozing mozzarella inside and out. Ultimate cheesy treat!</p>
+                <div class="price">₹349</div>
+                <button class="order-btn" onclick="alert('Cheese Burst Pizza Ordered!')">Order</button>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        © 2025 Foodie's Delight | All Rights Reserved
+    </footer>
+
+</body>
+
+</html>

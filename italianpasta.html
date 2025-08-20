@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pasta Menu - Foodie's Delight</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            background-color: #fffaf0;
+            color: #333;
+        }
+        
+        header {
+            background-color: #ff704d;
+            color: white;
+            padding: 20px;
+            font-size: 28px;
+            text-align: center;
+            position: relative;
+        }
+        
+        .home-button {
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            background-color: white;
+            color: #ff704d;
+            padding: 8px 16px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 6px;
+            transition: 0.3s;
+        }
+        
+        .home-button:hover {
+            background-color: #ffe5db;
+        }
+        
+        .menu-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            padding: 40px 20px;
+        }
+        
+        .pasta-card {
+            background-color: white;
+            border-radius: 10px;
+            width: 280px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+        
+        .pasta-card:hover {
+            transform: scale(1.03);
+        }
+        
+        .pasta-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+        
+        .pasta-info {
+            padding: 15px;
+        }
+        
+        .pasta-info h3 {
+            margin-bottom: 10px;
+            color: #ff704d;
+        }
+        
+        .pasta-info p {
+            font-size: 15px;
+            margin-bottom: 10px;
+        }
+        
+        .price {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .order-btn {
+            background-color: #ff704d;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 15px;
+        }
+        
+        .order-btn:hover {
+            background-color: #cc5033;
+        }
+        
+        footer {
+            margin-top: 50px;
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        🍝 Pasta Menu
+        <a class="home-button" href="index.html">Home</a>
+    </header>
+
+    <div class="menu-container">
+
+        <!-- Spaghetti Marinara -->
+        <div class="pasta-card">
+            <img src="img/spaghetti.jpeg" alt="Spaghetti Marinara">
+            <div class="pasta-info">
+                <h3>Spaghetti Marinara</h3>
+                <p>Classic Italian spaghetti tossed in rich tomato sauce with herbs.</p>
+                <div class="price">₹189</div>
+                <button class="order-btn" onclick="alert('Spaghetti Marinara Ordered!')">Order</button>
+            </div>
+        </div>
+
+        <!-- Alfredo Pasta -->
+        <div class="pasta-card">
+            <img src="img/alfredo.jpeg" alt="Alfredo Pasta">
+            <div class="pasta-info">
+                <h3>Alfredo Pasta</h3>
+                <p>Creamy white sauce pasta with parmesan, garlic & parsley.</p>
+                <div class="price">₹229</div>
+                <button class="order-btn" onclick="alert('Alfredo Pasta Ordered!')">Order</button>
+            </div>
+        </div>
+
+        <!-- Penne Arrabbiata -->
+        <div class="pasta-card">
+            <img src="img/arrabbiata.jpeg" alt="Penne Arrabbiata">
+            <div class="pasta-info">
+                <h3>Penne Arrabbiata</h3>
+                <p>Spicy tomato sauce with garlic, chili flakes & penne pasta.</p>
+                <div class="price">₹199</div>
+                <button class="order-btn" onclick="alert('Penne Arrabbiata Ordered!')">Order</button>
+            </div>
+        </div>
+
+        <!-- Pesto Pasta -->
+        <div class="pasta-card">
+            <img src="img/pesto.jpeg" alt="Pesto Pasta">
+            <div class="pasta-info">
+                <h3>Pesto Pasta</h3>
+                <p>Basil pesto with olive oil, garlic, parmesan & pine nuts.</p>
+                <div class="price">₹239</div>
+                <button class="order-btn" onclick="alert('Pesto Pasta Ordered!')">Order</button>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        © 2025 Foodie's Delight | All Rights Reserved
+    </footer>
+
+</body>
+
+</html>
